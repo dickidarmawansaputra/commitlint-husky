@@ -9,3 +9,29 @@ Husky improves your commits and more 🐶 woof!
 - [CommitLint](https://commitlint.js.org/).
 - [Husky](https://typicode.github.io/husky).
 
+## Install commitlint
+
+```
+# Install and configure if needed
+npm install --save-dev @commitlint/{cli,config-conventional}
+# For Windows:
+npm install --save-dev @commitlint/config-conventional @commitlint/cli
+
+# Configure commitlint to use conventional config
+echo "module.exports = { extends: ['@commitlint/config-conventional'] };" > commitlint.config.js
+```
+
+## Install husky
+
+```
+# Install Husky v6
+npm install husky --save-dev
+# or
+yarn add husky --dev
+
+# Activate hooks
+npx husky install
+# or
+yarn husky install
+```
+
